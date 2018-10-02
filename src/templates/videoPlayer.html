@@ -3,7 +3,7 @@
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<%=this.model.attributes.id%>"></iframe>
   </div>
   <div class="video-player-details">
-    <h3></h3>
-    <div></div>
+    <h3><%=this.model.attributes.snippet.title%></h3>
+    <div><%=this.model.attributes.snippet.description%></div>
   </div>
 </div>
