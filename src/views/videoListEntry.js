@@ -4,10 +4,18 @@ var VideoListEntryView = Backbone.View.extend({
     this.render();
   },
 
+  events: {
+    'click': 'clicked'
+  },
+
+  clicked: function(e) {
+    console.log(this.model.select);
+    this.model.select();
+  },
+
 
   render: function () {
     this.$el.html(this.template(this.model.attributes));
-    console.log(this.model.attributes);
     return this;
   },
 
